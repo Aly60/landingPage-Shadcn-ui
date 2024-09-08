@@ -2,10 +2,15 @@ import { Button } from "@nextui-org/react"; // Import NextUI Button
 import heroImage from "../../public/assets/hero.png";
 
 const HeroSection = () => {
+  const handleScroll = () => {
+    document
+      .getElementById("CardLayout")
+      .scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <section
       id="HeroSection"
-      className="text-center p-12 bg-gradient-to-r from-green-400 to-blue-500 text-white scroll-mt-16"
+      className="text-center p-12 bg-gradient-to-r from-green-400 to-blue-500 text-white scroll-mt-16   "
     >
       <h1 className="text-5xl font-bold mb-4">مستقبل الاشراف على المشاريع</h1>
       <p className="text-xl mb-6">
@@ -22,6 +27,7 @@ const HeroSection = () => {
           padding: "12px 24px",
           borderRadius: "9999px",
         }}
+        onClick={handleScroll} // Trigger the scroll on click
       >
         المزيد عن اي سكوب
       </Button>

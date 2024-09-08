@@ -22,11 +22,14 @@ const SystemCards = () => {
   ];
 
   return (
-    <section id="SystemCards">
-      <div className="p-6">
-        <div className="text-center mb-6">
-          <h2 className="text-3xl font-bold mb-4">كيف صمم اي سكوب؟</h2>
-          <p className="text-lg max-w-2xl mx-auto">
+    <section id="SystemCards" className="py-12 px-4 bg-gray-100">
+      <div className="container mx-auto">
+        {/* Section Header */}
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">
+            كيف صمم اي سكوب؟
+          </h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             يعتمــد نظــام أي ســكوب عــلى ثلاثــة معاييــر لتقديم حــل ناجح
             لإدارة وثائــق المشروعــات بــدءا مــن تأمـيـن الوثائــق ثــم تنظيم
             الوصــول لهــا (إدارة الصلاحيــات) ثــم المرونــة في ادخــال أي
@@ -35,7 +38,8 @@ const SystemCards = () => {
           </p>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+        {/* Cards Grid */}
+        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
           {sections.map((section, index) => (
             <motion.div
               key={index}
@@ -45,11 +49,11 @@ const SystemCards = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: index * 0.2 }}
             >
-              <Card className="hover:shadow-lg transition-shadow duration-300">
-                <CardHeader className="font-bold text-xl">
+              <Card className="hover:shadow-xl transition-shadow duration-300 bg-white rounded-2xl p-6 border border-gray-200">
+                <CardHeader className="font-bold text-xl text-blue-600 border-b border-gray-100 pb-4 mb-4">
                   {section.title}
                 </CardHeader>
-                <CardBody>{section.text}</CardBody>
+                <CardBody className="text-gray-600">{section.text}</CardBody>
                 <CardFooter></CardFooter>
               </Card>
             </motion.div>

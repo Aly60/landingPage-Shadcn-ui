@@ -39,8 +39,9 @@ const Header = () => {
     { id: "HeroSection", name: "الرئيسية" },
     { id: "CardLayout", name: "عن إيسكوب" },
     { id: "SystemProps", name: "تصميم النظام" },
-    { id: "FaqSection", name: "الأسئلة والاستفسارات" },
+    { id: "SystemCards", name: "عناصر النظام" },
     { id: "CarouselSection", name: "صور النظام" },
+    { id: "FaqSection", name: "الأسئلة والاستفسارات" },
   ];
 
   return (
@@ -64,7 +65,7 @@ const Header = () => {
                   onClick={() => scrollToSection(item.id, item.name)}
                   className={`${
                     activeSection === item.name
-                      ? "text-white bg-blue-600"
+                      ? "text-white bg-blue-500"
                       : "text-gray-700 hover:text-blue-600 hover:bg-gray-100"
                   } transition-colors duration-300 px-4 py-2 rounded-lg active:bg-blue-100`}
                 >
