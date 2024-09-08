@@ -41,13 +41,18 @@
   color: #888;
 }
 @font-face {
-  font-family: "Bahij";
-  src: url("/fonts/Bahij.ttf") format("truetype");
+  font-family: "BahijBold";
+  src: url("/fonts/BahijBold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "BahijBlain";
+  src: url("/fonts/BahijBlain.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal;
 }
 
 /* Ensure Tailwind uses the Bahij font globally */
 body {
-  @apply font-bahij;
+  font-family: "BahijBlain", sans-serif;
 }

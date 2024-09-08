@@ -2,9 +2,7 @@ const CardLayout = () => {
   return (
     <section id="CardLayout">
       <div className=" flex flex-col items-center justify-center py-12 px-4 md:px-8 lg:px-16 bg-gray-100 scroll-mt-16">
-        {/* First Row */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
-          {/* First Column */}
           <div className="space-y-8">
             <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
@@ -29,7 +27,6 @@ const CardLayout = () => {
             </div>
           </div>
 
-          {/* Second Column */}
           <div className="space-y-8">
             <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
@@ -54,7 +51,6 @@ const CardLayout = () => {
           </div>
         </div>
 
-        {/* Second Row */}
         <div className="mt-12 w-full max-w-md">
           <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out text-center">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">

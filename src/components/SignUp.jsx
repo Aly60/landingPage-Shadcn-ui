@@ -37,8 +37,7 @@ const SignUp = forwardRef(({ setIsSignUpVisible }, ref) => {
     e.preventDefault();
     if (validateForm()) {
       setShowErrorBanner(false);
-      setIsSignUpVisible(false); // Close the modal on successful form submission
-      // Perform the actual form submission logic here
+      setIsSignUpVisible(false);
     }
   };
 
@@ -62,12 +61,11 @@ const SignUp = forwardRef(({ setIsSignUpVisible }, ref) => {
   };
 
   const handleModalClick = (e) => {
-    e.stopPropagation(); // Prevent clicks from closing the modal
+    e.stopPropagation();
   };
 
   return (
     <>
-      {/* Error Banner */}
       {showErrorBanner && (
         <div className="fixed top-0 inset-x-0 bg-red-600 text-white text-center py-3 z-50 shadow-lg">
           <p className="text-lg font-semibold">
@@ -76,7 +74,6 @@ const SignUp = forwardRef(({ setIsSignUpVisible }, ref) => {
         </div>
       )}
 
-      {/* SignUp Modal */}
       <div
         className="fixed inset-0 flex items-center justify-center bg-gray-800/60 z-40"
         onClick={() => setIsSignUpVisible(false)}
@@ -84,7 +81,7 @@ const SignUp = forwardRef(({ setIsSignUpVisible }, ref) => {
         <div
           ref={ref}
           className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md relative border border-gray-300"
-          onClick={handleModalClick} // Stop clicks inside the modal from propagating
+          onClick={handleModalClick}
         >
           <h2 className="text-2xl font-bold mb-6 text-gray-800">
             تسجيل الدخول

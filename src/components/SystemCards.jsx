@@ -5,7 +5,7 @@ const SystemCards = () => {
   const sections = [
     {
       title: "دخول من أي مكان",
-      text: " باستخدام انظام الايسكوب ليس هنـــاك حاجـــة للتقيد داخـــل المكاتـــب المغلقـــة، يمكـــن اســـتخدام النظام مـــن أي مـــكان بالعالم وفي اي وقت  ",
+      text: " باستخدام نظام الايسكوب ليس هنـــاك حاجـــة للتقيد داخـــل المكاتـــب المغلقـــة، يمكـــن اســـتخدام النظام مـــن أي مـــكان بالعالم وفي اي وقت  ",
     },
     {
       title: "لوحة متابعة وتقارير",
@@ -50,9 +50,7 @@ const SystemCards = () => {
                   {section.title}
                 </CardHeader>
                 <CardBody>{section.text}</CardBody>
-                <CardFooter>
-                  {/* You can add buttons or links in the footer if necessary */}
-                </CardFooter>
+                <CardFooter></CardFooter>
               </Card>
             </motion.div>
           ))}
