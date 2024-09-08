@@ -40,3 +40,14 @@
 .read-the-docs {
   color: #888;
 }
+@font-face {
+  font-family: "Bahij";
+  src: url("/fonts/Bahij.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Ensure Tailwind uses the Bahij font globally */
+body {
+  @apply font-bahij;
+}

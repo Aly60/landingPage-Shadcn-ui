@@ -6,10 +6,14 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/@nextui-org/theme/dist/components/(accordion|button|card|input|modal|navbar|spacer|divider|ripple|spinner).js"
+    "./node_modules/@nextui-org/theme/dist/components/(accordion|button|card|input|modal|navbar|spacer|divider|ripple|spinner).js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        bahij: ["Bahij", "sans-serif"],
+      },
+    },
   },
   plugins: [nextui()],
 };

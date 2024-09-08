@@ -30,7 +30,10 @@ const FaqSection = () => {
   ];
 
   return (
-    <div className="p-8 max-w-4xl mx-auto bg-white rounded-xl shadow-lg">
+    <div
+      id="FaqSection"
+      className="p-8 max-w-4xl mx-auto bg-white rounded-xl shadow-lg"
+    >
       <h2 className="text-4xl font-semibold text-center text-gray-800 mb-8">
         الأسئلة الشائعة
       </h2>
