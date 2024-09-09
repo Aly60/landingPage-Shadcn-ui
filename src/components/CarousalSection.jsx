@@ -43,7 +43,7 @@ const CarouselSection = () => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
     }, 5000); // Change slide every 5 seconds
 
-    return () => clearInterval(intervalId); // Cleanup interval on component unmount
+    return () => clearInterval(intervalId);
   }, [slides.length]);
 
   const nextSlide = () => {
@@ -71,17 +71,18 @@ const CarouselSection = () => {
               <img
                 src={slide.image}
                 alt={slide.title}
-                className="w-full h-[400px] object-cover rounded-2xl transition-transform duration-300 group-hover:scale-105"
+                className="w-full h-[250px] sm:h-[400px] object-cover rounded-2xl transition-transform duration-300 group-hover:scale-105"
               />
-              <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/60 to-transparent text-white rounded-b-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <h3 className="text-3xl font-bold mb-2">{slide.title}</h3>
-                <p className="text-lg">{slide.description}</p>
+              <div className="absolute bottom-0 left-0 w-full p-4 sm:p-6 bg-gradient-to-t from-black/60 to-transparent text-white rounded-b-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 className="text-lg sm:text-3xl font-bold mb-2">
+                  {slide.title}
+                </h3>
+                <p className="text-sm sm:text-lg">{slide.description}</p>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Navigation buttons */}
         <Button
           auto
           flat
@@ -101,12 +102,11 @@ const CarouselSection = () => {
           {">"}
         </Button>
 
-        {/* Dots Navigation */}
         <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3">
           {slides.map((_, index) => (
             <button
               key={index}
-              className={`w-4 h-4 rounded-full transition-all duration-300 ${
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
                 index === currentIndex ? "bg-white scale-125" : "bg-gray-500"
               }`}
               aria-label={`Slide ${index + 1}`}

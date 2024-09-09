@@ -1,4 +1,4 @@
-import { Button } from "@nextui-org/react"; // Import NextUI Button
+import { Button } from "@nextui-org/react";
 import heroImage from "../../public/assets/hero.png";
 
 const HeroSection = () => {
@@ -10,7 +10,7 @@ const HeroSection = () => {
   return (
     <section
       id="HeroSection"
-      className="text-center p-12 bg-gradient-to-r from-green-400 to-blue-500 text-white scroll-mt-16   "
+      className="text-center p-12 bg-gradient-to-r from-green-400 to-blue-500 text-white scroll-mt-12   "
     >
       <h1 className="text-5xl font-bold mb-4">مستقبل الاشراف على المشاريع</h1>
       <p className="text-xl mb-6">
@@ -20,14 +20,14 @@ const HeroSection = () => {
         auto
         bordered
         color="primary"
-        className="mb-6" // Margin bottom for spacing
+        className="mb-6"
         css={{
           backgroundColor: "white",
           color: "blue",
           padding: "12px 24px",
           borderRadius: "9999px",
         }}
-        onClick={handleScroll} // Trigger the scroll on click
+        onClick={handleScroll}
       >
         المزيد عن اي سكوب
       </Button>
