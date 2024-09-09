@@ -112,7 +112,7 @@ const Header = () => {
       </header>
 
       {isMobileMenuOpen && (
-        <nav className="md:hidden fixed top-16 left-0 w-full bg-white shadow-lg z-40">
+        <nav className="md:hidden fixed top-16 left-0 w-full bg-white shadow-lg z-40 pt-5">
           <ul className="flex flex-col items-center space-y-4 py-4">
             {navItems.map((item, idx) => (
               <li key={idx}>
