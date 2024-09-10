@@ -40,12 +40,6 @@
 .read-the-docs {
   color: #888;
 }
-@font-face {
-  font-family: "Bahij";
-  src: url("../public/fonts/bahij.otf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
 
 .cairo {
   font-family: "Cairo", system-ui;

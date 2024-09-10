@@ -11,7 +11,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        cairo: ["Cairo", "sans-serif"],
+        // cairo: ["Cairo", "sans-serif"],
         bahij: ["Bahij", "sans-serif"],
       },
     },
