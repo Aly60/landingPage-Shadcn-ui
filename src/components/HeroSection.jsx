@@ -10,7 +10,7 @@ const HeroSection = () => {
   return (
     <section
       id="HeroSection"
-      className="text-center p-12 bg-gradient-to-r from-green-400 to-blue-500 text-white scroll-mt-12   "
+      className="text-center p-12 bg-gradient-to-r from-green-400 to-blue-500 text-white scroll-mt-12  "
     >
       <h1 className="text-5xl font-bold mb-4">مستقبل الاشراف على المشاريع</h1>
       <p className="text-xl mb-6">

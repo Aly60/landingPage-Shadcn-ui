@@ -11,8 +11,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        bahijBold: ["BahijBold", "sans-serif"],
-        bahijBlain: ["BahijBlain", "sans-serif"],
+        cairo: ["Cairo", "sans-serif"],
+        bahij: ["Bahij", "sans-serif"],
       },
     },
   },

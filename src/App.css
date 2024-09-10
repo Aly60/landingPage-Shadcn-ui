@@ -42,26 +42,15 @@
 }
 @font-face {
   font-family: "Bahij";
-  src: url("/fonts/Bahij.ttf") format("truetype");
+  src: url("../public/fonts/bahij.otf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
-@font-face {
-  font-family: "BahijBold";
-  src: url("/fonts/BahijBold.ttf") format("truetype");
-  font-weight: 700;
+.cairo {
+  font-family: "Cairo", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
   font-style: normal;
-}
-
-@font-face {
-  font-family: "BahijBlain";
-  src: url("/fonts/BahijBlain.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-
-/* Apply Bahij font globally */
-body {
-  font-family: "Bahij", sans-serif;
+  font-variation-settings: "slnt" 0;
 }
